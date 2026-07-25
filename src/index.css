@@ -1,0 +1,91 @@
+@import "tailwindcss";
+
+@theme {
+  --color-brandBg: #030712;
+  --color-brandCard: rgba(17, 24, 39, 0.5);
+  --color-brandPurple: #8b5cf6;
+  --color-brandCyan: #06b6d4;
+  --color-brandPink: #ec4899;
+  --color-brandBorder: rgba(255, 255, 255, 0.08);
+  --color-brandBorderHover: rgba(255, 255, 255, 0.15);
+  --font-sans: "Plus Jakarta Sans", sans-serif;
+  --font-mono: "JetBrains Mono", monospace;
+}
+
+/* Custom scrollbars */
+::-webkit-scrollbar {
+    width: 8px;
+}
+::-webkit-scrollbar-track {
+    background: #030712;
+}
+::-webkit-scrollbar-thumb {
+    background: rgba(139, 92, 246, 0.15);
+    border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+    background: #8b5cf6;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+/* Background Glowing Blobs */
+.glow-blob {
+    position: absolute;
+    width: 350px;
+    height: 350px;
+    border-radius: 50%;
+    filter: blur(120px);
+    opacity: 0.16;
+    pointer-events: none;
+    z-index: -1;
+    animation: blob-pulse 15s infinite alternate ease-in-out;
+}
+.blob-1 {
+    top: 5%;
+    left: 5%;
+    background-color: #8b5cf6; /* Violet */
+}
+.blob-2 {
+    top: 40%;
+    right: 5%;
+    background-color: #06b6d4; /* Cyan */
+    animation-delay: -5s;
+}
+.blob-3 {
+    bottom: 10%;
+    left: 15%;
+    background-color: #ec4899; /* Pink */
+    animation-delay: -10s;
+}
+
+@keyframes blob-pulse {
+    0% {
+        transform: scale(1) translate(0, 0);
+    }
+    50% {
+        transform: scale(1.15) translate(40px, 30px);
+    }
+    100% {
+        transform: scale(0.9) translate(-20px, -40px);
+    }
+}
+
+/* Glassmorphism custom helpers */
+.glass-effect {
+    background: rgba(17, 24, 39, 0.55);
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    backdrop-filter: blur(16px);
+    -webkit-backdrop-filter: blur(16px);
+}
+
+.glass-effect-hover {
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+.glass-effect-hover:hover {
+    border-color: rgba(255, 255, 255, 0.16);
+    box-shadow: 0 10px 30px -10px rgba(139, 92, 246, 0.2);
+    transform: translateY(-2px);
+}
