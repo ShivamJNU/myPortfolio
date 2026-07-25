@@ -5,7 +5,7 @@ import React, { useState, useEffect, useRef } from 'react';
 // ==========================================================================
 const resumePassages = [
     { 
-        text: "I completed my Bachelor of Technology (B.Tech) in Electronics and Communication at the School Of Engineering, Jawaharlal Nehru University (JNU), New Delhi (Dec 2021 - May 2025), graduating with a GPA of 7.78/10.", 
+        text: "I completed my Bachelor of Technology (B.Tech) in Electronics and Communication at the School Of Engineering, Jawaharlal Nehru University (JNU), New Delhi (Dec 2021 - May 2025), graduating with a GPA of 7.89/10.", 
         tags: ["education", "jnu", "gpa", "btech", "electronics", "communication", "jawaharlal", "nehru", "university", "delhi", "college", "study", "studied", "graduated", "degree"] 
     },
     { 
