@@ -53,7 +53,7 @@ const resumePassages = [
         tags: ["codeforces", "specialist", "rating", "rank", "handle", "shivamjnu", "max", "profile"] 
     },
     { 
-        text: "I am a Knight on LeetCode, ranking in the top 5% of participants globally with over 500+ solved problems (handle ShivamJNU).", 
+        text: "I am a Knight on LeetCode, ranking in the top 5% of participants globally with over 500+ solved problems (handle shivamprataphcs).", 
         tags: ["leetcode", "knight", "rank", "problems", "solved", "percentage", "global", "dsa", "contest", "handle"] 
     },
     { 

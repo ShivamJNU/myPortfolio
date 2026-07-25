@@ -13,7 +13,7 @@ const cpStats = [
         role: "Knight", 
         rating: "Top 5% globally", 
         logo: "https://cdn.simpleicons.org/leetcode/FFA116", 
-        link: "https://leetcode.com/ShivamJNU" 
+        link: "https://leetcode.com/u/shivamprataphcs/" 
     },
     { 
         name: "CodeChef", 
