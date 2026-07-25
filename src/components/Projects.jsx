@@ -11,7 +11,7 @@ const projects = [
             "Features real-time grid simulation using an interactive maze generator to increase user engagement."
         ],
         github: "https://github.com/ShivamJNU/AlgoSimulator",
-        live: "#"
+        live: "https://algosimulator.onrender.com/"
     },
     {
         title: "TheFoodApp",
