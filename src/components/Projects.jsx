@@ -7,8 +7,11 @@ const projects = [
         category: "Web Apps",
         description: "A premium, high-performance online judge and DSA practice platform supporting secure sandboxed execution.",
         bullets: [
-            "Architected a full-stack monorepo with NestJS and Next.js, integrating isolated Docker environments for C++ and Python runner validation.",
-            "Designed PostgreSQL schemas on Supabase and implemented dynamic math typesetting via local KaTeX bundler imports, optimizing render latency to 0ms."
+            "Architected a full-stack, monorepo-based online judge platform in TypeScript, implementing an isolated, sandboxed execution pipeline for secure algorithm runs.",
+            "Designed stateless RESTful APIs using NestJS, leveraging JWT auth guards and Google OAuth 2.0 for secure session validation.",
+            "Orchestrated code runtimes with remote compiler APIs to support C++ and Python, mapping execution tracebacks to unified system statuses (e.g. TLE, ERROR).",
+            "Engineered a normalized PostgreSQL database schema on Supabase, optimizing relational queries to handle rapid persistence of user submissions.",
+            "Bundled the KaTeX engine locally in Next.js to eliminate CDN network latency and integrated Zustand for low-latency Monaco editor state sync."
         ],
         github: "https://github.com/ShivamJNU/CodeRudra",
         live: "https://coderudra.vercel.app"
