@@ -2,6 +2,18 @@ import React, { useState } from 'react';
 
 const projects = [
     {
+        title: "CodeRudra",
+        tags: ["React", "Next.js", "Zustand", "NestJS", "PostgreSQL", "Supabase", "Docker", "OAuth"],
+        category: "Web Apps",
+        description: "A premium, high-performance online judge and DSA practice platform supporting secure sandboxed execution.",
+        bullets: [
+            "Architected a full-stack monorepo with NestJS and Next.js, integrating isolated Docker environments for C++ and Python runner validation.",
+            "Designed PostgreSQL schemas on Supabase and implemented dynamic math typesetting via local KaTeX bundler imports, optimizing render latency to 0ms."
+        ],
+        github: "https://github.com/ShivamJNU/CodeRudra",
+        live: "https://coderudra.vercel.app"
+    },
+    {
         title: "AlgoSimulator",
         tags: ["Node.js", "JavaScript", "CSS", "HTML", "Bootstrap"],
         category: "Web Apps",
