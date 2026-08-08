@@ -100,8 +100,13 @@ export default function Console() {
     const [isTyping, setIsTyping] = useState(false);
 
     const consoleEndRef = useRef(null);
+    const isFirstRender = useRef(true);
 
     useEffect(() => {
+        if (isFirstRender.current) {
+            isFirstRender.current = false;
+            return;
+        }
         if (consoleEndRef.current) {
             consoleEndRef.current.scrollIntoView({ behavior: 'smooth' });
         }
