@@ -17,6 +17,20 @@ const projects = [
         live: "https://coderudra.vercel.app"
     },
     {
+        title: "TheFoodApp",
+        tags: ["Node.js", "Express.js", "MongoDB", "Mongoose", "JWT", "bcrypt"],
+        category: "Web Apps",
+        description: "A full-featured restaurant management system built with robust RESTful routing.",
+        bullets: [
+            "Developed a restaurant management system using Node.js, Express, and MongoDB, implementing MVC Architecture for scalable and maintainable code structure.",
+            "Designed and implemented RESTful APIs for user authentication, restaurant management, menu creation, and order processing.",
+            "Integrated MongoDB with Mongoose for CRUD operations and efficient data modeling and schema design, resulting in a reduction in server response times.",
+            "Secured the application with JWT-based authentication and bcrypt password hashing."
+        ],
+        github: "https://github.com/ShivamJNU/TheFoodApp",
+        live: ""
+    },
+    {
         title: "AlgoSimulator",
         tags: ["Node.js", "JavaScript", "CSS", "HTML", "Bootstrap"],
         category: "Web Apps",
@@ -27,18 +41,6 @@ const projects = [
         ],
         github: "https://github.com/ShivamJNU/AlgoSimulator",
         live: "https://algosimulator.onrender.com/"
-    },
-    {
-        title: "TheFoodApp",
-        tags: ["Node.js", "Express.js", "MongoDB", "Mongoose", "JWT", "bcrypt"],
-        category: "Web Apps",
-        description: "A full-featured restaurant management system built with robust RESTful routing.",
-        bullets: [
-            "Implemented MVC Architecture for scalable, secure, and clean codebases.",
-            "Integrated MongoDB for CRUD operations and efficient data modeling, resulting in a reduction in response times."
-        ],
-        github: "https://github.com/ShivamJNU/TheFoodApp",
-        live: ""
     },
     {
         title: "MetroPathFinder",
@@ -56,10 +58,18 @@ const projects = [
 
 export default function Projects() {
     const [projectFilter, setProjectFilter] = useState("All");
+    const [expandedProjects, setExpandedProjects] = useState({});
 
     const filteredProjects = projectFilter === "All"
         ? projects
         : projects.filter(p => p.category === projectFilter);
+
+    const toggleExpand = (title) => {
+        setExpandedProjects(prev => ({
+            ...prev,
+            [title]: !prev[title]
+        }));
+    };
 
     return (
         <section id="projects" className="border-t border-brandBorder bg-black/10 py-20">
@@ -89,47 +99,61 @@ export default function Projects() {
 
                 {/* Projects Grid */}
                 <div className="grid md:grid-cols-3 gap-8">
-                    {filteredProjects.map((project, i) => (
-                        <div key={i} className="glass-effect glass-effect-hover p-6 rounded-xl flex flex-col justify-between">
-                            <div>
-                                <div className="flex items-center justify-between mb-4">
-                                    <span className="text-[10px] font-extrabold tracking-wider uppercase bg-brandPurple/20 border border-brandPurple/30 text-purple-300 px-2 py-0.5 rounded">
-                                        {project.category}
-                                    </span>
-                                    <div className="flex items-center gap-3">
-                                        {project.github && (
-                                            <a href={project.github} target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-white text-lg">
-                                                <i className="fa-brands fa-github"></i>
-                                            </a>
-                                        )}
-                                        {project.live && project.live !== "#" && (
-                                            <a href={project.live} target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-white text-lg">
-                                                <i className="fa-solid fa-arrow-up-right-from-square"></i>
-                                            </a>
-                                        )}
+                    {filteredProjects.map((project, i) => {
+                        const isExpanded = !!expandedProjects[project.title];
+                        const visibleBullets = isExpanded ? project.bullets : project.bullets.slice(0, 3);
+
+                        return (
+                            <div key={i} className="glass-effect glass-effect-hover p-6 rounded-xl flex flex-col justify-between">
+                                <div>
+                                    <div className="flex items-center justify-between mb-4">
+                                        <span className="text-[10px] font-extrabold tracking-wider uppercase bg-brandPurple/20 border border-brandPurple/30 text-purple-300 px-2 py-0.5 rounded">
+                                            {project.category}
+                                        </span>
+                                        <div className="flex items-center gap-3">
+                                            {project.github && (
+                                                <a href={project.github} target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-white text-lg">
+                                                    <i className="fa-brands fa-github"></i>
+                                                </a>
+                                            )}
+                                            {project.live && project.live !== "#" && (
+                                                <a href={project.live} target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-white text-lg">
+                                                    <i className="fa-solid fa-arrow-up-right-from-square"></i>
+                                                </a>
+                                            )}
+                                        </div>
                                     </div>
+                                    <h3 className="text-xl font-bold text-white mb-2">{project.title}</h3>
+                                    <p className="text-gray-400 text-sm mb-4">{project.description}</p>
+                                    
+                                    <ul className="space-y-2">
+                                        {visibleBullets.map((b, idx) => (
+                                            <li key={idx} className="text-xs text-gray-300 flex items-start gap-2">
+                                                <span className="text-brandCyan">•</span>
+                                                <span>{b}</span>
+                                            </li>
+                                        ))}
+                                    </ul>
+
+                                    {project.bullets.length > 3 && (
+                                        <button
+                                            onClick={() => toggleExpand(project.title)}
+                                            className="text-brandCyan hover:text-cyan-300 text-[10px] font-bold mt-3 cursor-pointer flex items-center gap-1 transition-colors duration-150"
+                                        >
+                                            {isExpanded ? "Show Less ↑" : `Show More (+${project.bullets.length - 3}) ↓`}
+                                        </button>
+                                    )}
                                 </div>
-                                <h3 className="text-xl font-bold text-white mb-2">{project.title}</h3>
-                                <p className="text-gray-400 text-sm mb-4">{project.description}</p>
-                                
-                                <ul className="space-y-2 mb-6">
-                                    {project.bullets.map((b, idx) => (
-                                        <li key={idx} className="text-xs text-gray-300 flex items-start gap-2">
-                                            <span className="text-brandCyan">•</span>
-                                            <span>{b}</span>
-                                        </li>
+                                <div className="flex flex-wrap gap-1.5 pt-4 mt-6 border-t border-brandBorder">
+                                    {project.tags.map((tag, idx) => (
+                                        <span key={idx} className="bg-white/5 text-gray-400 text-[10px] px-2 py-0.5 rounded">
+                                            {tag}
+                                        </span>
                                     ))}
-                                </ul>
+                                </div>
                             </div>
-                            <div className="flex flex-wrap gap-1.5 pt-4 border-t border-brandBorder">
-                                {project.tags.map((tag, idx) => (
-                                    <span key={idx} className="bg-white/5 text-gray-400 text-[10px] px-2 py-0.5 rounded">
-                                        {tag}
-                                    </span>
-                                ))}
-                            </div>
-                        </div>
-                    ))}
+                        );
+                    })}
                 </div>
             </div>
         </section>
