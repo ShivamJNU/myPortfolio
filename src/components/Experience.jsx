@@ -15,8 +15,8 @@ const experiences = [
         ]
     },
     {
-        role: "Software Engineer Intern",
-        company: "Newton School",
+        role: "Software Development Engineer",
+        company: "Incanus Technologies",
         period: "Feb 2025 – May 2025",
         location: "Pune, India",
         tech: ["Java", "Spring Boot", "MySQL", "Hibernate", "JWT/OAuth2"],

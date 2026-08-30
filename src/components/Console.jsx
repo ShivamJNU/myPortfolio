@@ -29,16 +29,16 @@ const resumePassages = [
         tags: ["experience", "upgrad", "auth", "security", "api", "rishiverse", "backend", "jwt", "login"] 
     },
     { 
-        text: "I worked as a Software Engineer Intern at Newton School (Feb 2025 - May 2025), utilizing Java, Spring Boot, MySQL, and Hibernate.", 
-        tags: ["experience", "job", "work", "newton", "school", "intern", "role", "position", "technologies", "java", "spring", "boot", "hibernate"] 
+        text: "I worked as a Software Development Engineer (SDE) at Incanus Technologies (Feb 2025 - May 2025), utilizing Java, Spring Boot, MySQL, and Hibernate.", 
+        tags: ["experience", "job", "work", "incanus", "technologies", "sde", "role", "position", "technologies", "java", "spring", "boot", "hibernate"] 
     },
     { 
-        text: "At Newton School, I developed the backend component of a wealth management platform using Java and Spring Boot, and built microservices for KYC verification, client onboarding, registration, and profile management.", 
-        tags: ["experience", "newton", "school", "wealth", "management", "platform", "java", "spring", "boot", "microservices", "kyc", "verification", "onboarding", "registration"] 
+        text: "At Incanus Technologies, I developed the backend component of a wealth management platform using Java and Spring Boot, and built microservices for KYC verification, client onboarding, registration, and profile management.", 
+        tags: ["experience", "incanus", "technologies", "wealth", "management", "platform", "java", "spring", "boot", "microservices", "kyc", "verification", "onboarding", "registration"] 
     },
     { 
-        text: "At Newton School, I designed secure authentication mechanisms with Spring Security (JWT/OAuth2) and implemented Role-Based Access Control (RBAC) utilizing MySQL database and Hibernate.", 
-        tags: ["experience", "newton", "school", "auth", "security", "jwt", "oauth", "rbac", "spring", "mysql", "hibernate"] 
+        text: "At Incanus Technologies, I designed secure authentication mechanisms with Spring Security (JWT/OAuth2) and implemented Role-Based Access Control (RBAC) utilizing MySQL database and Hibernate.", 
+        tags: ["experience", "incanus", "technologies", "auth", "security", "jwt", "oauth", "rbac", "spring", "mysql", "hibernate"] 
     },
     { 
         text: "I am a 2x ICPC Regionalist, qualifying for the Kanpur and Amritapuri onsite regionals in ICPC Asia West 2024. My credentials can be verified at icpc.global/ICPCID/NE7Z1YLO2BN4.", 
@@ -140,7 +140,7 @@ export default function Console() {
             }
 
             // Identify if the query is targeting specific platforms/brands
-            const platformBrands = ["leetcode", "codeforces", "codechef", "icpc", "iicpc", "newton", "upgrad", "gate", "jnu"];
+            const platformBrands = ["leetcode", "codeforces", "codechef", "icpc", "iicpc", "newton", "upgrad", "incanus", "gate", "jnu"];
             const queryTargetBrands = queryWords.filter(word => platformBrands.includes(word));
 
             // Passage scoring based on keyword intersection and brand exclusivity
