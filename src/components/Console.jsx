@@ -13,7 +13,7 @@ const resumePassages = [
         tags: ["education", "school", "pcm", "icse", "percentage", "hcs", "class", "12", "twelfth", "marks", "grade", "board"] 
     },
     { 
-        text: "Currently, I work as a Software Development Engineer (SDE) at Upgrad (Jun 2025 - Present), working with C++, JavaScript, Node.js, Express.js, MySQL, and MongoDB.", 
+        text: "Currently, I work as a Software Development Engineer (SDE) at Upgrad (Jul 2026 - Present), working with C++, JavaScript, Node.js, Express.js, MySQL, and MongoDB.", 
         tags: ["experience", "job", "work", "upgrad", "sde", "role", "position", "current", "present", "now", "company"] 
     },
     { 
@@ -29,7 +29,7 @@ const resumePassages = [
         tags: ["experience", "upgrad", "auth", "security", "api", "rishiverse", "backend", "jwt", "login"] 
     },
     { 
-        text: "I worked as a Software Development Engineer (SDE) at Incanus Technologies (Feb 2025 - May 2025), utilizing Java, Spring Boot, MySQL, and Hibernate.", 
+        text: "I worked as a Software Development Engineer (SDE) at Incanus Technologies (Jun 2025 - Jun 2026), utilizing Java, Spring Boot, MySQL, and Hibernate.", 
         tags: ["experience", "job", "work", "incanus", "technologies", "sde", "role", "position", "technologies", "java", "spring", "boot", "hibernate"] 
     },
     { 

@@ -4,7 +4,7 @@ const experiences = [
     {
         role: "Software Development Engineer",
         company: "Upgrad",
-        period: "Jun 2025 – Present",
+        period: "Jul 2026 – Present",
         location: "Delhi NCR, India",
         tech: ["C++", "Javascript", "Node.js", "Express.js", "MySQL", "MongoDB"],
         bullets: [
@@ -17,7 +17,7 @@ const experiences = [
     {
         role: "Software Development Engineer",
         company: "Incanus Technologies",
-        period: "Feb 2025 – May 2025",
+        period: "Jun 2025 – Jun 2026",
         location: "Pune, India",
         tech: ["Java", "Spring Boot", "MySQL", "Hibernate", "JWT/OAuth2"],
         bullets: [
