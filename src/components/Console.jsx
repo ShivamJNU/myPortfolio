@@ -13,32 +13,32 @@ const resumePassages = [
         tags: ["education", "school", "pcm", "icse", "percentage", "hcs", "class", "12", "twelfth", "marks", "grade", "board"] 
     },
     { 
-        text: "Currently, I work as a Software Development Engineer (SDE) at Newton School (Jun 2025 - Present), working with C++, JavaScript, Node.js, Express.js, MySQL, and MongoDB.", 
-        tags: ["experience", "job", "work", "newton", "school", "sde", "role", "position", "current", "present", "now", "company"] 
+        text: "Currently, I work as a Software Development Engineer (SDE) at Upgrad (Jun 2025 - Present), working with C++, JavaScript, Node.js, Express.js, MySQL, and MongoDB.", 
+        tags: ["experience", "job", "work", "upgrad", "sde", "role", "position", "current", "present", "now", "company"] 
     },
     { 
-        text: "At Newton School, I implemented backend admin scripts and developed model/solution logic for over 500+ problems, supporting evaluation across multiple valid solution paths and powering automated assessment workflows.", 
-        tags: ["experience", "newton", "school", "problems", "scripts", "backend", "logic", "assessment", "workflows", "database", "admin"] 
+        text: "At Upgrad, I implemented backend admin scripts and developed model/solution logic for over 500+ problems, supporting evaluation across multiple valid solution paths and powering automated assessment workflows.", 
+        tags: ["experience", "upgrad", "problems", "scripts", "backend", "logic", "assessment", "workflows", "database", "admin"] 
     },
     { 
-        text: "At Newton School, I built over 100+ coding AI questions, mapping responses to expected outputs via solution keywords.", 
-        tags: ["experience", "newton", "school", "ai", "questions", "coding", "keywords", "outputs", "llm", "model"] 
+        text: "At Upgrad, I built over 100+ coding AI questions, mapping responses to expected outputs via solution keywords.", 
+        tags: ["experience", "upgrad", "ai", "questions", "coding", "keywords", "outputs", "llm", "model"] 
     },
     { 
-        text: "At Newton School, I designed and built secure authentication and authorization APIs for the Rishiverse platform, supporting core backend workflows.", 
-        tags: ["experience", "newton", "school", "auth", "security", "api", "rishiverse", "backend", "jwt", "login"] 
+        text: "At Upgrad, I designed and built secure authentication and authorization APIs for the Rishiverse platform, supporting core backend workflows.", 
+        tags: ["experience", "upgrad", "auth", "security", "api", "rishiverse", "backend", "jwt", "login"] 
     },
     { 
-        text: "I worked as a Software Engineer Intern at Mphasis Ltd. (Feb 2025 - May 2025), utilizing Java, Spring Boot, MySQL, and Hibernate.", 
-        tags: ["experience", "job", "work", "mphasis", "intern", "role", "position", "technologies", "java", "spring", "boot", "hibernate"] 
+        text: "I worked as a Software Engineer Intern at Newton School (Feb 2025 - May 2025), utilizing Java, Spring Boot, MySQL, and Hibernate.", 
+        tags: ["experience", "job", "work", "newton", "school", "intern", "role", "position", "technologies", "java", "spring", "boot", "hibernate"] 
     },
     { 
-        text: "At Mphasis, I developed the backend component of a wealth management platform using Java and Spring Boot, and built microservices for KYC verification, client onboarding, registration, and profile management.", 
-        tags: ["experience", "mphasis", "wealth", "management", "platform", "java", "spring", "boot", "microservices", "kyc", "verification", "onboarding", "registration"] 
+        text: "At Newton School, I developed the backend component of a wealth management platform using Java and Spring Boot, and built microservices for KYC verification, client onboarding, registration, and profile management.", 
+        tags: ["experience", "newton", "school", "wealth", "management", "platform", "java", "spring", "boot", "microservices", "kyc", "verification", "onboarding", "registration"] 
     },
     { 
-        text: "At Mphasis, I designed secure authentication mechanisms with Spring Security (JWT/OAuth2) and implemented Role-Based Access Control (RBAC) utilizing MySQL database and Hibernate.", 
-        tags: ["experience", "mphasis", "auth", "security", "jwt", "oauth", "rbac", "spring", "mysql", "hibernate"] 
+        text: "At Newton School, I designed secure authentication mechanisms with Spring Security (JWT/OAuth2) and implemented Role-Based Access Control (RBAC) utilizing MySQL database and Hibernate.", 
+        tags: ["experience", "newton", "school", "auth", "security", "jwt", "oauth", "rbac", "spring", "mysql", "hibernate"] 
     },
     { 
         text: "I am a 2x ICPC Regionalist, qualifying for the Kanpur and Amritapuri onsite regionals in ICPC Asia West 2024. My credentials can be verified at icpc.global/ICPCID/NE7Z1YLO2BN4.", 
@@ -133,14 +133,14 @@ export default function Console() {
             if (queryWords.length === 0) {
                 setConsoleOutput(prev => [
                     ...prev,
-                    { text: "AetherAI: Please enter a query containing core keywords (e.g., 'JNU', 'Newton', 'Codeforces', 'Projects').", type: "response" }
+                    { text: "AetherAI: Please enter a query containing core keywords (e.g., 'JNU', 'Upgrad', 'Codeforces', 'Projects').", type: "response" }
                 ]);
                 setIsTyping(false);
                 return;
             }
 
             // Identify if the query is targeting specific platforms/brands
-            const platformBrands = ["leetcode", "codeforces", "codechef", "icpc", "iicpc", "newton", "mphasis", "gate", "jnu"];
+            const platformBrands = ["leetcode", "codeforces", "codechef", "icpc", "iicpc", "newton", "upgrad", "gate", "jnu"];
             const queryTargetBrands = queryWords.filter(word => platformBrands.includes(word));
 
             // Passage scoring based on keyword intersection and brand exclusivity
@@ -183,7 +183,7 @@ export default function Console() {
                 answerText = `AetherAI (Local Agent):\nBased on Shivam's resume context, here is what I found:\n\n• ${relevantMatches.join("\n\n• ")}`;
             } else {
                 // Fallback smart response summary
-                answerText = `AetherAI (Local Agent):\nI couldn't find a direct keyword match for that on Shivam's resume.\n\nHowever, Shivam is a B.Tech graduate from JNU currently working as a Software Development Engineer (SDE) at Newton School. He is a Leetcode Knight, Codeforces Specialist, and 2x ICPC Regionalist. He is skilled in C++, Java, Node.js, and Spring Boot.\n\nTry asking: 'Tell me about Newton School', 'Where did you study?', or 'What projects have you built?'.`;
+                answerText = `AetherAI (Local Agent):\nI couldn't find a direct keyword match for that on Shivam's resume.\n\nHowever, Shivam is a B.Tech graduate from JNU currently working as a Software Development Engineer (SDE) at Upgrad. He is a Leetcode Knight, Codeforces Specialist, and 2x ICPC Regionalist. He is skilled in C++, Java, Node.js, and Spring Boot.\n\nTry asking: 'Tell me about Upgrad', 'Where did you study?', or 'What projects have you built?'.`;
             }
 
             setConsoleOutput(prev => [
@@ -208,7 +208,7 @@ export default function Console() {
     };
 
     const quickQueries = [
-        "Tell me about Newton School",
+        "Tell me about Upgrad",
         "What is your Leetcode rank?",
         "What are your projects?",
         "Where did you study?"

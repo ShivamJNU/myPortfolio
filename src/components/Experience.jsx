@@ -3,7 +3,7 @@ import React from 'react';
 const experiences = [
     {
         role: "Software Development Engineer",
-        company: "Newton School",
+        company: "Upgrad",
         period: "Jun 2025 – Present",
         location: "Delhi NCR, India",
         tech: ["C++", "Javascript", "Node.js", "Express.js", "MySQL", "MongoDB"],
@@ -16,7 +16,7 @@ const experiences = [
     },
     {
         role: "Software Engineer Intern",
-        company: "Mphasis Ltd.",
+        company: "Newton School",
         period: "Feb 2025 – May 2025",
         location: "Pune, India",
         tech: ["Java", "Spring Boot", "MySQL", "Hibernate", "JWT/OAuth2"],
