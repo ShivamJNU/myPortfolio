@@ -1,10 +1,10 @@
 import React from 'react';
 
 const skills = {
-    languages: ["C/C++", "JavaScript", "Java", "HTML", "CSS"],
-    frameworks: ["ReactJS", "Node.js", "Express.js", "Spring Boot", "Hibernate", "Bootstrap"],
-    databases: ["MongoDB", "MySQL"],
-    tools: ["Git", "Github", "Linux", "Vercel", "VS Code", "IntelliJ IDEA", "Google AI Studio"]
+    languages: ["C/C++", "Python", "HTML/CSS", "JavaScript", "TypeScript", "Java"],
+    frameworks: ["TailwindCSS", "React.js", "Next.js", "Node.js", "Nest.js", "Express.js", "Spring Boot"],
+    databases: ["PostgreSQL", "Supabase (Prisma)", "MongoDB", "MySQL"],
+    tools: ["Git", "GitHub", "Vercel", "Render", "Google Cloud Console", "Linux", "VS Code", "IntelliJ IDEA"]
 };
 
 export default function Skills() {
