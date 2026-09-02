@@ -25,8 +25,8 @@ const resumePassages = [
         tags: ["experience", "upgrad", "ai", "questions", "coding", "keywords", "outputs", "llm", "model"] 
     },
     { 
-        text: "At Upgrad, I designed and built secure authentication and authorization APIs for the Rishiverse platform, supporting core backend workflows.", 
-        tags: ["experience", "upgrad", "auth", "security", "api", "rishiverse", "backend", "jwt", "login"] 
+        text: "At Upgrad, I designed and built secure authentication and authorization APIs for the LMS platform, supporting core backend workflows.", 
+        tags: ["experience", "upgrad", "auth", "security", "api", "lms", "backend", "jwt", "login"] 
     },
     { 
         text: "I worked as a Software Development Engineer (SDE) at Incanus Technologies (Jun 2025 - Jun 2026), utilizing Java, Spring Boot, MySQL, and Hibernate.", 

@@ -11,7 +11,7 @@ const experiences = [
             "Implemented backend admin scripts for 500+ problems, supporting evaluation across multiple valid solution paths.",
             "Developed model and admin solution logic for 500+ coding problems to power automated assessment workflows.",
             "Built 100+ coding AI questions, mapping responses to expected outputs via solution keywords.",
-            "Built secure authentication and authorization APIs for the Rishiverse platform, supporting core backend workflows."
+            "Built secure authentication and authorization APIs for the LMS platform, supporting core backend workflows."
         ]
     },
     {
