@@ -5,12 +5,12 @@ const experiences = [
         role: "Software Development Engineer",
         company: "Upgrad",
         period: "Jul 2026 – Present",
-        location: "Delhi NCR, India",
+        location: "Pune, India",
         tech: ["C++", "Javascript", "Node.js", "Express.js", "MySQL", "MongoDB"],
         bullets: [
             "Implemented backend admin scripts for 500+ problems, supporting evaluation across multiple valid solution paths.",
-            "Developed model and admin solution logic for 500+ coding problems to power automated assessment workflows.",
-            "Built 100+ coding AI questions, mapping responses to expected outputs via solution keywords.",
+            "Developed model and admin solution logic for 500+ problems to power automated assessment workflows.",
+            "Engineered LLM-powered evaluation reliable workflow for automated coding and response assessment.",
             "Built secure authentication and authorization APIs for the LMS platform, supporting core backend workflows."
         ]
     },
@@ -18,8 +18,8 @@ const experiences = [
         role: "Software Development Engineer",
         company: "Incanus Technologies",
         period: "Jun 2025 – Jun 2026",
-        location: "Pune, India",
-        tech: ["Java", "Spring Boot", "MySQL", "Hibernate", "JWT/OAuth2"],
+        location: "Bengaluru, India",
+        tech: ["Java", "Spring Boot", "MySQL", "Hibernate"],
         bullets: [
             "Developed the backend component of a wealth management platform using Java and Spring Boot.",
             "Built microservices for KYC verification, client onboarding, registration, and profile management in Java.",

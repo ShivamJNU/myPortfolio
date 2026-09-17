@@ -13,24 +13,24 @@ const resumePassages = [
         tags: ["education", "school", "pcm", "icse", "percentage", "hcs", "class", "12", "twelfth", "marks", "grade", "board"] 
     },
     { 
-        text: "Currently, I work as a Software Development Engineer (SDE) at Upgrad (Jul 2026 - Present), working with C++, JavaScript, Node.js, Express.js, MySQL, and MongoDB.", 
-        tags: ["experience", "job", "work", "upgrad", "sde", "role", "position", "current", "present", "now", "company"] 
+        text: "Currently, I work as a Software Development Engineer (SDE) at Upgrad (Jul 2026 - Present) in Pune, India, working with C++, JavaScript, Node.js, Express.js, MySQL, and MongoDB.", 
+        tags: ["experience", "job", "work", "upgrad", "sde", "role", "position", "current", "present", "now", "company", "pune"] 
     },
     { 
         text: "At Upgrad, I implemented backend admin scripts and developed model/solution logic for over 500+ problems, supporting evaluation across multiple valid solution paths and powering automated assessment workflows.", 
         tags: ["experience", "upgrad", "problems", "scripts", "backend", "logic", "assessment", "workflows", "database", "admin"] 
     },
     { 
-        text: "At Upgrad, I built over 100+ coding AI questions, mapping responses to expected outputs via solution keywords.", 
-        tags: ["experience", "upgrad", "ai", "questions", "coding", "keywords", "outputs", "llm", "model"] 
+        text: "At Upgrad, I engineered an LLM-powered evaluation reliable workflow for automated coding and response assessment.", 
+        tags: ["experience", "upgrad", "ai", "llm", "evaluation", "workflow", "automated", "coding", "assessment", "model"] 
     },
     { 
         text: "At Upgrad, I designed and built secure authentication and authorization APIs for the LMS platform, supporting core backend workflows.", 
         tags: ["experience", "upgrad", "auth", "security", "api", "lms", "backend", "jwt", "login"] 
     },
     { 
-        text: "I worked as a Software Development Engineer (SDE) at Incanus Technologies (Jun 2025 - Jun 2026), utilizing Java, Spring Boot, MySQL, and Hibernate.", 
-        tags: ["experience", "job", "work", "incanus", "technologies", "sde", "role", "position", "technologies", "java", "spring", "boot", "hibernate"] 
+        text: "I worked as a Software Development Engineer (SDE) at Incanus Technologies (Jun 2025 - Jun 2026) in Bengaluru, India, utilizing Java, Spring Boot, MySQL, and Hibernate.", 
+        tags: ["experience", "job", "work", "incanus", "technologies", "sde", "role", "position", "technologies", "java", "spring", "boot", "hibernate", "bengaluru"] 
     },
     { 
         text: "At Incanus Technologies, I developed the backend component of a wealth management platform using Java and Spring Boot, and built microservices for KYC verification, client onboarding, registration, and profile management.", 
@@ -79,6 +79,22 @@ const resumePassages = [
     { 
         text: "I built MetroPathFinder, a C++ program implementing Dijkstra's algorithm to determine the shortest path between 240+ Delhi Metro stations across 8 lines.", 
         tags: ["projects", "metropathfinder", "cpp", "metro", "path", "finder", "shortest", "dijkstra", "delhi", "stations"] 
+    },
+    { 
+        text: "I built CodeRudra, an online judge platform in TypeScript using Next.js, NestJS, Supabase PostgreSQL, and TailwindCSS with sandboxed execution for C++ and Python algorithms.", 
+        tags: ["projects", "coderudra", "judge", "compiler", "online", "judge", "dsa", "nextjs", "nestjs", "supabase", "monaco", "katex", "sandbox"] 
+    },
+    { 
+        text: "My technical skills include C/C++, Python, HTML/CSS, TailwindCSS, JavaScript, TypeScript, React.js, Next.js, Node.js, Nest.js, Express.js, Java, Spring Boot, AWS, AI Engineering, Agentic AI, and AI Automation.", 
+        tags: ["skills", "technologies", "languages", "frameworks", "stack", "react", "nextjs", "node", "nest", "express", "java", "python", "cpp", "aws", "agentic", "automation"] 
+    },
+    { 
+        text: "In AI & ML, I specialize in Generative AI, Large Language Models (LLMs), Prompt Engineering, Machine Learning, and Google AI Studio.", 
+        tags: ["skills", "ai", "ml", "genai", "generative", "llm", "llms", "prompt", "engineering", "machine", "learning", "google", "studio"] 
+    },
+    { 
+        text: "My database stack includes PostgreSQL, Supabase (Prisma), MongoDB, and MySQL. For developer tools and cloud, I use Git, GitHub, Vercel, Render, Google Cloud Console, Google AI Studio, Linux, VS Code, and IntelliJ IDEA.", 
+        tags: ["skills", "databases", "tools", "postgresql", "supabase", "prisma", "mongodb", "mysql", "git", "vercel", "render", "gcp", "linux", "cloud"] 
     },
     { 
         text: "I served as a DSA Contests Problem Setter at JNU, designing and conducting contests at The Placement Cell to assess candidates' Data Structures and Algorithms knowledge.", 
@@ -183,7 +199,7 @@ export default function Console() {
                 answerText = `AetherAI (Local Agent):\nBased on Shivam's resume context, here is what I found:\n\n• ${relevantMatches.join("\n\n• ")}`;
             } else {
                 // Fallback smart response summary
-                answerText = `AetherAI (Local Agent):\nI couldn't find a direct keyword match for that on Shivam's resume.\n\nHowever, Shivam is a B.Tech graduate from JNU currently working as a Software Development Engineer (SDE) at Upgrad. He is a Leetcode Knight, Codeforces Specialist, and 2x ICPC Regionalist. He is skilled in C++, Java, Node.js, and Spring Boot.\n\nTry asking: 'Tell me about Upgrad', 'Where did you study?', or 'What projects have you built?'.`;
+                answerText = `AetherAI (Local Agent):\nI couldn't find a direct keyword match for that on Shivam's resume.\n\nHowever, Shivam is an SDE at Upgrad, B.Tech graduate from JNU, 2x ICPC Regionalist, and Knight on LeetCode. He specializes in Full-Stack & AI Engineering (LLMs, GenAI, C++, React/Next.js, Node.js, Spring Boot).\n\nTry asking: 'Tell me about Upgrad', 'What are your skills?', or 'What projects have you built?'.`;
             }
 
             setConsoleOutput(prev => [
